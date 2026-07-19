@@ -21,12 +21,16 @@
 
 <main class="wrap">
   <h1 class="page">The Course</h1>
-  <p class="lede">Program structure and weekly learning units. Click a unit to expand it.</p>
+  <p class="lede">Program structure and weekly learning units. Click a section to expand it.</p>
 
-  <section class="intro md" id="intro">
-    <p class="loading">Loading…</p>
-  </section>
+  <details class="card" id="intro-card">
+    <summary>Program Overview <span class="tag">curriculum &amp; meetings</span></summary>
+    <div class="body md" id="intro" dir="auto">
+      <p class="loading">Loading…</p>
+    </div>
+  </details>
 
+  <h2 class="folder">The Units</h2>
   <div id="units"></div>
 </main>
 
