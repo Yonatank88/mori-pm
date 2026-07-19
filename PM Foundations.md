@@ -69,8 +69,6 @@ One sentence: what am I taking from today's meeting? What commitment am I making
 
 # Unit 1 — The Product Manager's Job and Methods
 
-*[Content placeholder]*
-
 **Weekly Challenge:**
 
 Start a **running request log** — and backfill it.
