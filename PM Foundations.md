@@ -21,9 +21,8 @@ The following materials are intended for reading **before** each meeting:
 ### Recommended Further Reading
 
 1. *Inspired* — Marty Cagan
-2. *The Mom Test* — Rob Fitzpatrick
-3. *Continuous Discovery Habits* — Teresa Torres
-4. *[placeholder]*
+2. *The Goal* — Eliyahu M. Goldratt
+3. *The Lean Startup* — Eric Ries
 
 ---
 
