@@ -36,8 +36,7 @@ Meetings take place once a week, for two hours.
 1. Go over the materials of the relevant unit (about one hour).
 2. Each chapter opens with the **pre-reading** — this is the main thing. Don't leave it to the last minute.
 3. After the reading you will find **guiding questions** to help process the material and locate your gap. You don't have to answer them — you can write out answers if it helps, or just keep them in mind while reading.
-4. Each chapter closes with the **Weekly Challenge** — use the full week between meetings to practice it on real work.
-5. Each week, prepare a **draft artifact** — the deliverable of that week's method (a problem statement, a user flow, a spec…) built on a real, live project. This draft is the centerpiece of the meeting.
+4. Each chapter closes with the **Weekly Challenge** — use the full week between meetings to practice it on real work. Its output is that week's **draft artifact** (a problem statement, a user flow, a spec…), built on a real, live project — the centerpiece of the meeting.
 
 ### Preparing the Artifact for the Meeting
 
@@ -90,8 +89,8 @@ Start a **running request log** — and backfill it.
 
 Map it as a table:
 
-| Name | Request | Request Type (feature / problem) |
-|------|---------|----------------------------------|
+| Requester Name | Request | Request Type (feature / problem) |
+|----------------|---------|----------------------------------|
 | | | |
 | | | |
 
