@@ -34,9 +34,10 @@ Meetings take place once a week, for two hours.
 ### Preparation Before Each Meeting
 
 1. Go over the materials of the relevant unit (about one hour).
-2. At the start of each chapter you will find the **Weekly Challenge** — use the full week between meetings to practice it on real work. Don't leave the reading to the last minute.
-3. At the end of each chapter you will find **guiding questions** to help process the material and locate your gap. You don't have to answer them — you can write out answers if it helps, or just keep them in mind while reading.
-4. Each week, prepare a **draft artifact** — the deliverable of that week's method (a problem statement, a user flow, a spec…) built on a real, live project. This draft is the centerpiece of the meeting.
+2. Each chapter opens with the **pre-reading** — this is the main thing. Don't leave it to the last minute.
+3. After the reading you will find **guiding questions** to help process the material and locate your gap. You don't have to answer them — you can write out answers if it helps, or just keep them in mind while reading.
+4. Each chapter closes with the **Weekly Challenge** — use the full week between meetings to practice it on real work.
+5. Each week, prepare a **draft artifact** — the deliverable of that week's method (a problem statement, a user flow, a spec…) built on a real, live project. This draft is the centerpiece of the meeting.
 
 ### Preparing the Artifact for the Meeting
 
@@ -69,6 +70,17 @@ One sentence: what am I taking from today's meeting? What commitment am I making
 
 # Unit 1 — The Product Manager's Job and Methods
 
+**Pre-reading:**
+
+1. [WHAT Does a Product Manager Actually Do?](https://stephenanderson.medium.com/what-does-a-product-manager-actually-do-bee1d853f420) — Stephen P. Anderson
+
+**Guiding questions** *(optional — answer if it helps, or just hold them in mind while reading)*:
+
+1. Who are my customers as the digital lead at HK? (participants? alumni? program directors? donors?)
+2. What process do I currently have before committing to a solution?
+3. How do I define a business outcome at HK?
+4. What transparency do I provide my stakeholders into the product process?
+
 **Weekly Challenge:**
 
 Start a **running request log** — and backfill it.
@@ -85,28 +97,17 @@ Map it as a table:
 
 Don't act differently yet — just observe and log. Bring the table to the next meeting.
 
-**Pre-reading:**
-
-1. [WHAT Does a Product Manager Actually Do?](https://stephenanderson.medium.com/what-does-a-product-manager-actually-do-bee1d853f420) — Stephen P. Anderson
-
-**Guiding questions** *(optional — answer if it helps, or just hold them in mind while reading)*:
-
-1. Who are my customers as the digital lead at HK? (participants? alumni? program directors? donors?)
-2. What process do I currently have before committing to a solution?
-3. How do I define a business outcome at HK?
-4. What transparency do I provide my stakeholders into the product process?
-
 ---
 
 # Unit 2 — Needs & Requirements
 
 *[Content placeholder]*
 
-**Weekly Challenge:** *[placeholder]*
-
 **Pre-reading:** *[placeholder — curated articles]*
 
 **Guiding questions:** *[placeholder]*
+
+**Weekly Challenge:** *[placeholder]*
 
 ---
 
@@ -114,11 +115,11 @@ Don't act differently yet — just observe and log. Bring the table to the next 
 
 *[Content placeholder]*
 
-**Weekly Challenge:** *[placeholder]*
-
 **Pre-reading:** *[placeholder — curated articles]*
 
 **Guiding questions:** *[placeholder]*
+
+**Weekly Challenge:** *[placeholder]*
 
 ---
 
@@ -126,11 +127,11 @@ Don't act differently yet — just observe and log. Bring the table to the next 
 
 *[Content placeholder]*
 
-**Weekly Challenge:** *[placeholder]*
-
 **Pre-reading:** *[placeholder — curated articles]*
 
 **Guiding questions:** *[placeholder]*
+
+**Weekly Challenge:** *[placeholder]*
 
 ---
 
@@ -138,8 +139,8 @@ Don't act differently yet — just observe and log. Bring the table to the next 
 
 *[Content placeholder]*
 
-**Weekly Challenge:** *[placeholder]*
-
 **Pre-reading:** *[placeholder — curated articles]*
 
 **Guiding questions:** *[placeholder]*
+
+**Weekly Challenge:** *[placeholder]*
