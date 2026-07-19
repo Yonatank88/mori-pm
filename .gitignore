@@ -1,0 +1,3 @@
+.DS_Store
+# Internal data — never publish
+*.csv

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PM Foundations — Artifacts</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">PM Foundations</a>
+    <nav class="site">
+      <a href="index.html">Course</a>
+      <a href="artifacts.html" class="active">Artifacts</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1 class="page">Artifacts &amp; Folders</h1>
+  <p class="lede">Working documents per program. Click a document to expand it — content is loaded live from the repository.</p>
+  <div id="tree"></div>
+</main>
+
+<footer class="site">
+  <div class="wrap">Content is rendered live from the markdown files in this repository.</div>
+</footer>
+
+<script>
+// Add or remove entries here when files change in the repo.
+// Each program folder lists its markdown documents (paths relative to repo root).
+const TREE = [
+  {
+    folder: 'Programs / PIF',
+    files: [
+      'Programs/PIF/PIF - Recruit Flow Spec.md',
+      'Programs/PIF/PIF - User Flow Diagram.md',
+      'Programs/PIF/PIF - Tasks.md',
+    ],
+  },
+  {
+    folder: 'Programs / MBL',
+    files: [
+      'Programs/MBL/MBL - Recruit Flow Spec.md',
+      'Programs/MBL/MBL - User Flow Diagram.md',
+      'Programs/MBL/MBL - Tasks.md',
+    ],
+  },
+  {
+    folder: 'Programs / EIDF',
+    files: [
+      'Programs/EIDF/EIDF - Recruit Flow Spec.md',
+      'Programs/EIDF/EIDF - User Flow Diagram.md',
+      'Programs/EIDF/EIDF - Tasks.md',
+    ],
+  },
+  {
+    folder: 'Programs / Arnon',
+    files: [
+      'Programs/Arnon/Arnon - Recruit Flow Spec.md',
+      'Programs/Arnon/Arnon - User Flow Diagram.md',
+      'Programs/Arnon/Arnon - Tasks.md',
+    ],
+  },
+  { folder: 'Comunity', files: [] },
+  { folder: 'Events', files: [] },
+  { folder: 'Internal', files: [] },
+];
+
+const tree = document.getElementById('tree');
+
+for (const group of TREE) {
+  const h = document.createElement('h2');
+  h.className = 'folder';
+  h.textContent = group.folder;
+  tree.appendChild(h);
+
+  if (!group.files.length) {
+    const empty = document.createElement('div');
+    empty.className = 'empty-folder';
+    empty.textContent = 'Empty for now.';
+    tree.appendChild(empty);
+    continue;
+  }
+
+  for (const path of group.files) {
+    const name = path.split('/').pop().replace(/\.md$/, '');
+    const details = document.createElement('details');
+    details.className = 'card';
+
+    const summary = document.createElement('summary');
+    summary.textContent = name;
+    const tag = document.createElement('span');
+    tag.className = 'tag';
+    tag.textContent = '.md';
+    summary.appendChild(tag);
+
+    const body = document.createElement('div');
+    body.className = 'body md';
+    body.setAttribute('dir', 'auto');
+    body.innerHTML = '<p class="loading">Loading…</p>';
+    details.append(summary, body);
+    tree.appendChild(details);
+
+    // Lazy-load the document the first time it is opened.
+    details.addEventListener('toggle', async () => {
+      if (!details.open || details.dataset.loaded) return;
+      details.dataset.loaded = '1';
+      try {
+        const res = await fetch(encodeURI(path), { cache: 'no-store' });
+        if (!res.ok) throw new Error(res.status);
+        const text = await res.text();
+        // Drop the document's own H1 (it duplicates the summary line).
+        body.innerHTML = marked.parse(text.replace(/^# .+\n/, ''));
+      } catch (e) {
+        body.innerHTML = '<p class="loading">Could not load this file (' + e.message + ').</p>';
+      }
+    });
+  }
+}
+</script>
+
+</body>
+</html>
