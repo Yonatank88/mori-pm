@@ -13,8 +13,8 @@ The following materials are intended for reading **before** each meeting:
 | Week | Learning Unit | Page |
 |------|--------------|------|
 | 1 | **The Product Manager's Job and Methods** | – |
-| 2 | **Needs & Requirements** — Problem Framing and Requirements Gathering | – |
-| 3 | **User Flows** — Mapping the User's Journey | – |
+| 2 | **User Flows** — Mapping the User's Journey | – |
+| 3 | **Needs & Requirements** — Problem Framing and Requirements Gathering | – |
 | 4 | **Specification** — User Stories and the Single-Page Spec | – |
 | 5 | **Project Management** — Prioritization and Working with Developers | – |
 
@@ -97,19 +97,71 @@ Don't act differently yet — just observe and log. Bring the table to the next 
 
 ---
 
-# Unit 2 — Needs & Requirements
+# Unit 2 — User Flows
 
-*[Content placeholder]*
+**Goal of this unit:** Learn to map the *complete* process a user goes through — including everything that happens behind the scenes (back office: staff actions, systems, automations) to make each step possible.
 
-**Pre-reading:** *[placeholder — curated articles]*
+**Pre-reading** *(in this order)*:
+1. **Start here:** [User Journeys vs. User Flows](https://www.nngroup.com/articles/user-journeys-vs-user-flows/) — Nielsen Norman Group.
+   Read this first to understand the difference between a user *journey* and a user *flow*. **Note: neither of these is this week's task.** They are the vocabulary. Our task is the next level — mapping the full process *including what happens behind the scenes*:
+2. [Service Blueprint](https://blog.uxtweak.com/service-blueprint/) — UXtweak. **This is the task** — the map of the entire process: what the user experiences, alongside everything that happens behind the scenes to make it possible.
+   *Note: disregard the "physical evidence" lane — it's not important for our purposes. Focus on the user's actions, frontstage, backstage, and support processes.*
+3. [Swimlanes](https://ux-prasad.medium.com/swimlanes-ccfb16632e9a) — Prasad Kantamneni. Short read with some nice practical pointers for building the map itself.
 
-**Guiding questions:** *[placeholder]*
+**Weekly Challenge:**
 
-**Weekly Challenge:** *[placeholder]*
+**Step 1 — List the PIF registration flow:** Write a simple, ordered list of everything a student goes through in the **PIF registration flow** — from first contact **until the user completes registration**. Every step, in order, one line each — including what happens behind the scenes.
+**Scope:** participant-facing process only. Anything that is for facilitators — assume it has been taken care of, and leave it out.
+
+*Example — a person buying a burger at McDonald's:*
+
+1. Customer arrives at the restaurant
+2. Customer orders at the self-service kiosk
+3. Order appears on the kitchen screen (beep)
+4. Cook makes the burger
+5. Burger is sent to the counter
+6. Customer picks it up from the counter
+7. Customer eats at the table
+
+**Step 2 — Turn the list into a service blueprint:** Sort each step from your list into 3 lanes:
+1. **User interaction** — everything the user touches: forms, emails, pages
+2. **System** — what happens automatically behind the scenes (CRM)
+3. **Team** — steps handled by people on the team
+
+*The McDonald's example as a blueprint:*
+
+```
+TIME ──────────────────────────────────────────────────────────────────▶
+
+USER        ┌────────┐   ┌───────────┐                ┌─────────┐   ┌────────┐
+(kiosk,     │ Arrive │──▶│ Order at  │                │ Pick up │──▶│ Eat 🍔 │
+forms)      └────────┘   │ kiosk     │                │ counter │   └────────┘
+                         └─────┬─────┘                └────▲────┘
+............................. │ ..........................│............
+SYSTEM                   ┌────▼──────┐                     │
+                         │ Kitchen   │                     │
+                         │ screen 🔔 │                     │
+                         └─────┬─────┘                     │
+............................. │ ..........................│............
+TEAM                     ┌────▼──────┐   ┌──────────────┐  │
+                         │ Cook makes│──▶│ Burger sent  │──┘
+                         │ burger    │   │ to counter   │
+                         └───────────┘   └──────────────┘
+```
+- Start at first contact and end when the user completes registration
+- Every place you don't actually know what happens — mark with a **"?"** instead of guessing
+Use **Miro**, **draw.io**, or any other tool you like for the drawing.
+Bring the map (with the question marks) to the meeting.
+
+**Guiding questions** *(answer before the meeting, in writing)*:
+1. Choose one journey at HK: where does it truly begin for the user, and what is their end goal?
+2. Which steps in that journey are visible to the user — and which happen back office (staff actions, systems, emails, spreadsheets)?
+3. Where do users get stuck or drop off along the way? Do I *know* this, or am I assuming?
+4. For each back-office step: who owns it, and what happens when they're unavailable?
 
 ---
 
-# Unit 3 — User Flows
+# Unit 3 — Needs & Requirements
 
 *[Content placeholder]*
 
